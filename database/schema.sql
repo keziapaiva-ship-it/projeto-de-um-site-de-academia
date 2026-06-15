@@ -1,0 +1,8 @@
+CREATE TABLE alunos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    telefone VARCHAR(20),
+    plano VARCHAR(50),
+    data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
